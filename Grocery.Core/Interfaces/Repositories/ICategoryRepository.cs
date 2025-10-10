@@ -11,6 +11,8 @@ namespace Grocery.Core.Interfaces.Repositories
     {
 
         public Category? Get(int id);
+
+        public Category? Get(string name);
         public List<Category> GetAll();
 
     }

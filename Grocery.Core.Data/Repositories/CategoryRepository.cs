@@ -29,6 +29,13 @@ namespace Grocery.Core.Data.Repositories
             Category? category = categoryList.FirstOrDefault(c => c.Id == id);
             return category;
         }
+
+        public Category? Get(string name)
+        {
+            Category? category = categoryList.FirstOrDefault(c => c.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+            return category;
+        }
+
         public List<Category> GetAll()
         {
             return categoryList;

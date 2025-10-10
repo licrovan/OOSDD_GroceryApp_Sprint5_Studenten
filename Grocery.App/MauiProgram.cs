@@ -52,6 +52,8 @@ namespace Grocery.App
             builder.Services.AddTransient<LoginView>().AddTransient<LoginViewModel>();
             builder.Services.AddTransient<BestSellingProductsView>().AddTransient<BestSellingProductsViewModel>();
             builder.Services.AddTransient<BoughtProductsView>().AddTransient<BoughtProductsViewModel>();
+            builder.Services.AddTransient<CategoryView>().AddTransient<CategoryViewModel>();
+            builder.Services.AddTransient<ProductCategoryView>().AddTransient<ProductCategoryViewModel>();
             return builder.Build();
         }
     }
